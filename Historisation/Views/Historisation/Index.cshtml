@@ -1,0 +1,76 @@
+﻿@model Domain.Entitee.Historisation
+@{
+    
+    Layout = "~/Views/Shared/Acceuil.cshtml";
+}
+@section test{
+    
+
+@using (Html.BeginForm("HistorisationAF", "Connection", FormMethod.Post))
+{
+
+    <div class="form-horizontal">
+
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(t=>t.poles, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @if (ViewData.ContainsKey("pole2"))
+                    {
+                        @Html.DropDownListFor(t=>t.poles, ViewData["pole2"] as List<SelectListItem>, new { style = "width:250px", @class = "form-control" })
+                    }
+                </div>
+            </div>
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(t=>t.mission, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="editor-field">
+                    @Html.DropDownListFor(t => t.mission, new SelectList(string.Empty, "Value", "Text"), new { style = "width:250px", @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <br />
+        <div style="color: Purple;">
+            @Html.Label("NB_Dossiers", new { style = "width:250px" })
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(h => h.nbDossiersTr, new { Value = "" })
+        </div>
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(t => t.mission, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @{
+                    List<SelectListItem> listItems1 = new List<SelectListItem>();
+                    listItems1.Add(new SelectListItem
+                    {
+                        Text = "REAB",
+                        Value = "REAB"
+                    });
+                    listItems1.Add(new SelectListItem
+                    {
+                        Text = "PROMO",
+                        Value = "PROMO",
+
+                    });
+                    listItems1.Add(new SelectListItem
+                    {
+                        Text = "CROSS",
+                        Value = "CROSS"
+                    });
+                }
+                @Html.DropDownListFor(t => t.h_debut, listItems1, new { @class = "form-control" })
+                @Html.ValidationMessageFor(t => t.duree, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success" value="submit">Enregistrer</button>
+        <br />
+        
+</div>
+}
+}
+
+
+

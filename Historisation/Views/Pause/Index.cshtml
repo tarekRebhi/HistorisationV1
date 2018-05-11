@@ -1,0 +1,44 @@
+﻿@model Domain.Entitee.Pause
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Acceuil.cshtml";
+}
+@section test{
+<div class="container">
+@using (Html.BeginForm("Create", "Pause", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div style="color: Purple;">
+            @Html.LabelFor(m => m.type, new { style = "width:250px" })
+        </div>
+        <div class="editor-field">
+           @Html.DropDownListFor(m => m.type, new List<SelectListItem> {
+                       new SelectListItem { Value = "Null" , Text = "Select" },
+                       new SelectListItem { Value = "Pause Dej" , Text = "Pause Dej" },
+                       new SelectListItem { Value = "Pause Perso" , Text = "Pause Perso" },
+                       new SelectListItem { Value = "Pause Déjeuner" , Text = "Pause Déjeuner" },
+                       new SelectListItem { Value = "Pause Réunion" , Text = "Pause Réunion" },
+                             }, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary" value="submit">Enregistrer</button>
+        <button type="reset" class="btn btn-default" value="submit">Annuler</button>
+        @*<a href="@Url.Action("Acceuil","Home")" style="display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    /*padding: 10px;*/
+    float:right;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;">Annuler</a>*@
+        <br />
+        
+        <br />
+    </div>
+}   
+</div>
+}

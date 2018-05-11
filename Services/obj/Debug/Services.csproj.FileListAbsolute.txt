@@ -1,0 +1,10 @@
+C:\Users\trebhi\Desktop\project\Historisation\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Services.dll
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Services.pdb
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Data.dll
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Domain.dll
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Data.pdb
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\Domain.pdb
+C:\Users\trebhi\Desktop\project\Historisation\Services\bin\Debug\EntityFramework.xml
+C:\Users\trebhi\Desktop\project\Historisation\Services\obj\Debug\Services.dll
+C:\Users\trebhi\Desktop\project\Historisation\Services\obj\Debug\Services.pdb

@@ -1,0 +1,10 @@
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\Domain.dll
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\Domain.pdb
+C:\Users\trebhi\Desktop\project\Historisation\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\trebhi\Desktop\project\Historisation\Domain\obj\Debug\Domain.dll
+C:\Users\trebhi\Desktop\project\Historisation\Domain\obj\Debug\Domain.pdb
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\Domain.dll.config
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\EntityFramework.dll
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\EntityFramework.xml
+C:\Users\trebhi\Desktop\project\Historisation\Domain\bin\Debug\EntityFramework.SqlServer.xml
